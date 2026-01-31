@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ioi5d8rusra"
-path="res://.godot/imported/duck.png-bab50dde877054bbee68c936c45b3282.ctex"
+uid="uid://dm6w5dneylp5u"
+path="res://.godot/imported/arrow_left.png-f34ce099b17014b0213d0d011a0766df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/duck/duck.png"
-dest_files=["res://.godot/imported/duck.png-bab50dde877054bbee68c936c45b3282.ctex"]
+source_file="res://mini_games/massage/arrow_left.png"
+dest_files=["res://.godot/imported/arrow_left.png-f34ce099b17014b0213d0d011a0766df.ctex"]
 
 [params]
 

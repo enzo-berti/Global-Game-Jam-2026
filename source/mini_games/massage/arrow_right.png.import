@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba6qekqmr5xil"
-path="res://.godot/imported/fleche haut.png-7f3432698df1250f8241ab4aacafe0f1.ctex"
+uid="uid://b2qssv3udxf88"
+path="res://.godot/imported/arrow_right.png-eb97c0cb1b8eea64ed673a11aded1f87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mini_games/massage/fleche haut.png"
-dest_files=["res://.godot/imported/fleche haut.png-7f3432698df1250f8241ab4aacafe0f1.ctex"]
+source_file="res://mini_games/massage/arrow_right.png"
+dest_files=["res://.godot/imported/arrow_right.png-eb97c0cb1b8eea64ed673a11aded1f87.ctex"]
 
 [params]
 

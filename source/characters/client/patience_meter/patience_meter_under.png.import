@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqe77eleaiscj"
-path="res://.godot/imported/fleche bas.png-f36b486b4a41b08b6d9095ef69e6df08.ctex"
+uid="uid://dm2b42bvp86iy"
+path="res://.godot/imported/patience_meter_under.png-7c6fa012ea51d19ac216a8818199ca30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mini_games/massage/fleche bas.png"
-dest_files=["res://.godot/imported/fleche bas.png-f36b486b4a41b08b6d9095ef69e6df08.ctex"]
+source_file="res://characters/client/patience_meter/patience_meter_under.png"
+dest_files=["res://.godot/imported/patience_meter_under.png-7c6fa012ea51d19ac216a8818199ca30.ctex"]
 
 [params]
 

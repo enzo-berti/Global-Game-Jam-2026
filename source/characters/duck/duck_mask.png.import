@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6yosvwgfmi2b"
-path="res://.godot/imported/barre inside pleine.png-c2d84038cd21076da1e64c5f5339b61d.ctex"
+uid="uid://d8afrsquc5ch"
+path="res://.godot/imported/duck_mask.png-943a11c7e30ecb245a83069c0b1fad56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/client/patience_meter/barre inside pleine.png"
-dest_files=["res://.godot/imported/barre inside pleine.png-c2d84038cd21076da1e64c5f5339b61d.ctex"]
+source_file="res://characters/duck/duck_mask.png"
+dest_files=["res://.godot/imported/duck_mask.png-943a11c7e30ecb245a83069c0b1fad56.ctex"]
 
 [params]
 

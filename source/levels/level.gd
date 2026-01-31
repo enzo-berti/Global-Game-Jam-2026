@@ -20,9 +20,11 @@ func _process(delta: float) -> void:
 
 #Spawn new client
 func spawn_client() -> void:
-	var client = preload("res://characters/client/client.tscn")
+	var client = preload("res://characters/duck/duck_client.tscn")
 	var instance = client.instantiate()
 	add_child(instance)
 	instance.position = spawn_pos
 	is_there_client = true
+	
+	instance.start_mask()
 	pass

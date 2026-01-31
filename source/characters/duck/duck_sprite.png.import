@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbn6wuptrjxue"
-path="res://.godot/imported/FX_Glitch.png-e0e28f7b85cea56f180e6acae4917d10.ctex"
+uid="uid://dxc0e5wt6qlxc"
+path="res://.godot/imported/duck_sprite.png-d0ea74f493dcbfce23cb4dac1c473052.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/client/FX/FX_Glitch.png"
-dest_files=["res://.godot/imported/FX_Glitch.png-e0e28f7b85cea56f180e6acae4917d10.ctex"]
+source_file="res://characters/duck/duck_sprite.png"
+dest_files=["res://.godot/imported/duck_sprite.png-d0ea74f493dcbfce23cb4dac1c473052.ctex"]
 
 [params]
 

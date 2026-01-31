@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm6w5dneylp5u"
-path="res://.godot/imported/fleche gauche.png-b49900c7bd52652fa35be4546f65269c.ctex"
+uid="uid://dqe77eleaiscj"
+path="res://.godot/imported/arrow_down.png-c96d0923f6891c57f6765a6ba31d22e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mini_games/massage/fleche gauche.png"
-dest_files=["res://.godot/imported/fleche gauche.png-b49900c7bd52652fa35be4546f65269c.ctex"]
+source_file="res://mini_games/massage/arrow_down.png"
+dest_files=["res://.godot/imported/arrow_down.png-c96d0923f6891c57f6765a6ba31d22e5.ctex"]
 
 [params]
 

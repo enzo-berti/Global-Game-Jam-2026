@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var mask_texture : Texture2D
+
 @onready var spawn_pos : Vector2 = get_node("../SpawnPoint").position
 @onready var game_pos : Vector2 = get_node("../GamePoint").position
 @onready var destroy_pos : Vector2 = get_node("../DestroyPoint").position
@@ -35,3 +37,8 @@ func _physics_process(delta: float) -> void:
 func destroy() -> void:
 	destination = destroy_pos
 	x = 0
+	
+func start_mask() -> void:
+	var client = preload("res://mini_games/mask/mask.tscn")
+	var instance = client.instantiate()
+	add_child(instance)

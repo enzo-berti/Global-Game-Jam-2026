@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://cilyync3tqtan"]
+
+[ext_resource type="Texture2D" uid="uid://dm2b42bvp86iy" path="res://characters/client/patience_meter/patience_meter_under.png" id="1_ohisk"]
+[ext_resource type="Texture2D" uid="uid://6yosvwgfmi2b" path="res://characters/client/patience_meter/patience_meter_progress.png" id="2_2f5pf"]
+[ext_resource type="Texture2D" uid="uid://debcpbn14ulue" path="res://characters/client/FX/FX_Cœur.png" id="3_4dwkg"]
+
+[node name="MainMenu" type="Control" unique_id=617451129]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PatienceMeter" type="TextureProgressBar" parent="." unique_id=636006876]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -286.0
+offset_top = 35.0
+offset_right = 173.0
+offset_bottom = 106.0
+grow_horizontal = 2
+scale = Vector2(1.25, 1.25)
+value = 100.0
+texture_under = ExtResource("1_ohisk")
+texture_progress = ExtResource("2_2f5pf")
+texture_progress_offset = Vector2(13, 11)
+
+[node name="HeartContainer" type="HBoxContainer" parent="." unique_id=1018261148]
+layout_mode = 1
+offset_right = 467.0
+offset_bottom = 153.0
+
+[node name="Heart1" type="TextureRect" parent="HeartContainer" unique_id=1546438324]
+layout_mode = 2
+texture = ExtResource("3_4dwkg")
+expand_mode = 3
+
+[node name="Heart2" type="TextureRect" parent="HeartContainer" unique_id=109575661]
+layout_mode = 2
+texture = ExtResource("3_4dwkg")
+expand_mode = 3
+
+[node name="Heart3" type="TextureRect" parent="HeartContainer" unique_id=618699761]
+layout_mode = 2
+texture = ExtResource("3_4dwkg")
+expand_mode = 3
+
+[node name="ScoreTexture" type="TextureRect" parent="." unique_id=1458267983]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -191.83496
+offset_top = 65.0
+offset_right = -38.83496
+offset_bottom = 105.00001
+grow_horizontal = 0
+
+[node name="ScoreLabel" type="Label" parent="ScoreTexture" unique_id=138685709]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.5
+offset_top = -11.5
+offset_right = 50.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "SCORE : 1000"
+horizontal_alignment = 1
+vertical_alignment = 1
