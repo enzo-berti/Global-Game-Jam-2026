@@ -14,7 +14,7 @@ func _input(event: InputEvent) -> void:
 	_drawInput(event)
 
 func _paint_tex(pos: Vector2i) -> void:
-	img.fill_rect(Rect2i(pos, Vector2i(1, 1)).grow(brush_size / 2), paint_color)
+	img.fill_rect(Rect2i(pos, Vector2i(1, 1)).grow(brush_size), paint_color)
 
 func _drawInput(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
