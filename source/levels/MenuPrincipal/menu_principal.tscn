@@ -13,8 +13,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8y85c")
-tween_intensity = 1.2
-tween_duration = 0.3
+tween_intensity = 1.1
+tween_duration = 0.08
 
 [node name="background" type="TextureRect" parent="." unique_id=463167330]
 layout_mode = 1
