@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://drcepl1658dpn"]
 
-[ext_resource type="Script" uid="uid://c1b42wxvx0emo" path="res://levels/MenuPrincipal/menu_principal.gd" id="1_8y85c"]
-[ext_resource type="Texture2D" uid="uid://cpx78tmv62lxu" path="res://levels/MenuPrincipal/BackgroundMenu.png" id="2_8y85c"]
-[ext_resource type="Texture2D" uid="uid://qfpd4nnc6vqc" path="res://levels/MenuPrincipal/start button.png" id="2_axrye"]
-[ext_resource type="Texture2D" uid="uid://b2ngj7egmejki" path="res://levels/MenuPrincipal/quit.png" id="3_8y85c"]
+[ext_resource type="Script" uid="uid://c1b42wxvx0emo" path="res://levels/main_menu/menu_principal.gd" id="1_8y85c"]
+[ext_resource type="Texture2D" uid="uid://cpx78tmv62lxu" path="res://levels/main_menu/BackgroundMenu.png" id="2_8y85c"]
+[ext_resource type="Texture2D" uid="uid://qfpd4nnc6vqc" path="res://levels/main_menu/start button.png" id="2_axrye"]
+[ext_resource type="Texture2D" uid="uid://b2ngj7egmejki" path="res://levels/main_menu/quit.png" id="3_8y85c"]
 
 [node name="MenuPrincipal" type="Control" unique_id=725306042]
 layout_mode = 3

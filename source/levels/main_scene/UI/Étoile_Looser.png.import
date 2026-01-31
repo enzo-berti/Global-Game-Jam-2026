@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qfpd4nnc6vqc"
-path="res://.godot/imported/start button.png-e5b8a364a6e1584b81196d11c646351f.ctex"
+uid="uid://cw15x5tkpamj2"
+path="res://.godot/imported/Étoile_Looser.png-7e995c39bdc7bf7c5ed317818f5ac7e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/MenuPrincipal/start button.png"
-dest_files=["res://.godot/imported/start button.png-e5b8a364a6e1584b81196d11c646351f.ctex"]
+source_file="res://levels/main_scene/UI/Étoile_Looser.png"
+dest_files=["res://.godot/imported/Étoile_Looser.png-7e995c39bdc7bf7c5ed317818f5ac7e3.ctex"]
 
 [params]
 
