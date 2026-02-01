@@ -38,6 +38,7 @@ animations = [{
 mask_texture = ExtResource("2_dbb20")
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=847792521]
+position = Vector2(48, 556)
 sprite_frames = SubResource("SpriteFrames_lo8sx")
 animation = &"idle"
 autoplay = "idle"

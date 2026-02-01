@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bpeq83vrwjnde"]
 
 [ext_resource type="Shader" uid="uid://db7il62vfsuqa" path="res://mini_games/mask/mask.gdshader" id="1_rq241"]
+[ext_resource type="Texture2D" uid="uid://b8eohfn8l85df" path="res://characters/wrestler/masque catcher.png" id="2_l04ud"]
 [ext_resource type="Script" uid="uid://bnvhb2orwtida" path="res://mini_games/mask/mask.gd" id="3_4waao"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l04ud"]
@@ -10,6 +11,7 @@ shader = ExtResource("1_rq241")
 
 [node name="PaintArea" type="Sprite2D" parent="." unique_id=1704629239]
 material = SubResource("ShaderMaterial_l04ud")
+texture = ExtResource("2_l04ud")
 script = ExtResource("3_4waao")
 paint_color = Color(0.47983783, 0.26110652, 0.10199871, 1)
 brush_size = 10
