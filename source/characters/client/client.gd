@@ -12,6 +12,8 @@ var mask_prefab : Resource
 @export var speed : float = 10
 var x : float = 0
 
+var in_animation : bool = false
+
 ###### BUILT-IN FUNCTIONS ######
 
 func _ready() -> void:
@@ -19,18 +21,24 @@ func _ready() -> void:
 	
 	mask_prefab = preload("res://mini_games/mask/mask.tscn")
 
+func is_in_animation() -> bool:
+	return in_animation
 
 func _physics_process(delta: float) -> void:
-	x += delta / (10 / speed)
 	
+	# timer for start animation
+	x += delta / (10 / speed)
 	if x > 1:
 		x = 1
 	
 	if destination == game_pos:
 		position = spawn_pos + ease.OutBounce(x) * (destination - spawn_pos)
+		in_animation = true
 	elif destination == destroy_pos:
 		position = game_pos + ease.InSine(x) * (destination - game_pos)
-	
+		in_animation = true
+	else:
+		in_animation = false
 	
 	if position.distance_to(destroy_pos) < 10:
 		queue_free()
@@ -47,7 +55,6 @@ func start_mask() -> void:
 	var instance = mask_prefab.instantiate()
 	instance.get_node("PaintArea").defineTextureMask(mask_texture)
 	add_child(instance)
-
 
 func idle() -> void:
 	$AnimatedSprite2D.play("idle")
