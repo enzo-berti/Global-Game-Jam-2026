@@ -15,7 +15,7 @@ var actual_client : Node
 @export var massage_menu_node : Node
 
 @onready var main_menu : Control = $MainMenu
-@onready var music_player : AudioStreamPlayer2D = $MusicsPlayer
+@onready var music_player : AudioStreamPlayer2D = $AudioStreamPlayer2D
 @onready var music_1 = preload("res://mini_games/Main_theme_Chill_80BPM.ogg")
 @onready var music_2 = preload("res://mini_games/Main_theme_Chill_100BPM.ogg")
 @onready var music_3 = preload("res://mini_games/Main_Theme_Techno_120BPM.ogg")
