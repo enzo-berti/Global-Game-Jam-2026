@@ -67,12 +67,15 @@ offset_bottom = 162.0
 texture = ExtResource("5_t2nvs")
 expand_mode = 1
 
-[node name="audio_play_buttons" type="AudioStreamPlayer2D" parent="." unique_id=2050494248]
-stream = ExtResource("6_oql43")
-
 [node name="audio_main_menu" type="AudioStreamPlayer2D" parent="." unique_id=2050804421]
 stream = ExtResource("7_xb2bc")
 autoplay = true
+
+[node name="sfx_button" type="AudioStreamPlayer2D" parent="." unique_id=682097371]
+stream = ExtResource("6_oql43")
+volume_db = 10.0
+
+[node name="Timer" type="Timer" parent="." unique_id=575787160]
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
