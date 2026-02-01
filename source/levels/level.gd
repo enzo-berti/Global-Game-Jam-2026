@@ -36,6 +36,7 @@ func _process(delta: float) -> void:
 			if not actual_client.get_node("Mask/PaintArea").check_win():
 				return
 			
+			game_manager.score += 30
 			mask_menu_node.visible = false
 			state_machine = states.CUCUMBER
 			actual_client.start_cucumber()
