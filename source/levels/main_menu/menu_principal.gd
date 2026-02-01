@@ -2,10 +2,12 @@ extends Control
 
 @export var tween_intensity: float
 @export var tween_duration: float
+@export var button_audio : AudioStream
 
 @onready var StartButton: Button = $VBoxContainer/StartButton
 @onready var QuitButton: Button = $VBoxContainer/QuitButton
 @onready var level = preload("res://levels/level.tscn")
+@onready var audio = $audio_play_buttons
 
 func _process(_delta: float) -> void:
 	btn_hovered(StartButton)
@@ -23,7 +25,9 @@ func btn_hovered(button: Button):
 		start_tween(button, "scale", Vector2.ONE, tween_duration)
 
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_packed(level)
-
+	audio.stream = button_audio
+	audio.play()
+	
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()
+	

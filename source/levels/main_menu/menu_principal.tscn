@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://qfpd4nnc6vqc" path="res://levels/main_menu/start button.png" id="2_axrye"]
 [ext_resource type="Texture2D" uid="uid://b2ngj7egmejki" path="res://levels/main_menu/quit.png" id="3_8y85c"]
 [ext_resource type="Texture2D" uid="uid://bh5uk2nnnjygy" path="res://levels/main_menu/rocky racoons logo.png" id="5_t2nvs"]
+[ext_resource type="AudioStream" uid="uid://c2wdv8qbdcb86" path="res://mini_games/sfx/SFX-Input_Var04.ogg" id="6_oql43"]
+[ext_resource type="AudioStream" uid="uid://c1cvdcmvskhm1" path="res://mini_games/Main_Theme_Techno_120BPM.ogg" id="7_xb2bc"]
 
 [node name="MenuPrincipal" type="Control" unique_id=725306042]
 layout_mode = 3
@@ -64,6 +66,13 @@ offset_right = 173.01953
 offset_bottom = 162.0
 texture = ExtResource("5_t2nvs")
 expand_mode = 1
+
+[node name="audio_play_buttons" type="AudioStreamPlayer2D" parent="." unique_id=2050494248]
+stream = ExtResource("6_oql43")
+
+[node name="audio_main_menu" type="AudioStreamPlayer2D" parent="." unique_id=2050804421]
+stream = ExtResource("7_xb2bc")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
