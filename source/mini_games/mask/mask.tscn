@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bpeq83vrwjnde"]
 
 [ext_resource type="Shader" uid="uid://db7il62vfsuqa" path="res://mini_games/mask/mask.gdshader" id="1_rq241"]
+[ext_resource type="Texture2D" uid="uid://d8afrsquc5ch" path="res://characters/duck/duck_mask.png" id="2_l04ud"]
 [ext_resource type="Script" uid="uid://bnvhb2orwtida" path="res://mini_games/mask/mask.gd" id="3_4waao"]
-[ext_resource type="Texture2D" uid="uid://b8eohfn8l85df" path="res://characters/wrestler/masque catcher.png" id="3_egnoe"]
 [ext_resource type="AudioStream" uid="uid://s4g7shu475br" path="res://mini_games/mask/SFX/SFX-Appliquer_Mask.ogg" id="3_l04ud"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l04ud"]
@@ -13,9 +13,8 @@ shader_parameter/mask_texture = ExtResource("2_l04ud")
 
 [node name="PaintArea" type="Sprite2D" parent="." unique_id=1704629239]
 material = SubResource("ShaderMaterial_l04ud")
-texture = ExtResource("3_egnoe")
 script = ExtResource("3_4waao")
-paint_color = Color(0.47843137, 0.2627451, 0.101960786, 0)
+paint_color = Color(0, 0, 0, 0)
 brush_size = 10
 pourcentage_needed = 0.6
 
