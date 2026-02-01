@@ -60,6 +60,9 @@ func _drawInput(event: InputEvent) -> void:
 		var lpos = to_local(event.position)
 		var impos = lpos - offset + get_rect().size/2.0
 		
+		if !get_rect().has_point(lpos - offset):
+			return
+		
 		var num := ceili(event.relative.length())
 		var target_pos = impos - (event.relative)
 		
