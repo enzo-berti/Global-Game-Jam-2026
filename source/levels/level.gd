@@ -48,6 +48,7 @@ func _process(delta: float) -> void:
 				return
 			
 			state_machine = states.FINISH
+			game_manager.win_clients += 1
 			actual_client.destroy()
 		states.FINISH:
 			main_menu.stop_patience()

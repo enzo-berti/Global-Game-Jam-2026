@@ -22,8 +22,9 @@ signal patience_timeout
 func _ready() -> void:
 	patience_meter.visible = false
 
+
 func _process(delta: float) -> void:
-	patience_meter.value = timer.time_left / patience_time * 100
+	patience_meter.value = timer.time_left / (patience_time - (5 * game_manager.win_clients)) * 100
 	
 	if game_manager.health <= 0:
 		get_tree().change_scene_to_packed(gameover)
@@ -46,7 +47,7 @@ func _process(delta: float) -> void:
 ###### CUSTOM FUNCTIONS ######
 
 func start_patience() -> void:
-	timer.wait_time = patience_time
+	timer.wait_time = patience_time - (5 * game_manager.win_clients)
 	patience_meter.visible = true
 	timer.start()
 
