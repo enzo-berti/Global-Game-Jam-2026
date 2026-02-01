@@ -52,3 +52,5 @@ position = Vector2(960, 400)
 
 [node name="DestroyPoint" type="Node2D" parent="." unique_id=157540625]
 position = Vector2(960, 1400)
+
+[connection signal="patience_timeout" from="MainMenu" to="." method="_on_main_menu_patience_timeout"]

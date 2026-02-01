@@ -14,6 +14,8 @@ var actual_client : Node
 @export var mask_menu_node : Node
 @export var massage_menu_node : Node
 
+@onready var main_menu : Control = $MainMenu
+
 var color_names : Array[String] = ["blue", "green", "yellow", "red", "violet", "pink"] 
 
 ###### BUILT-IN FUNCTIONS ######
@@ -22,6 +24,7 @@ func _ready() -> void:
 	clients_resources = [preload("res://characters/cupcake/cupcake_client.tscn"), 
 preload("res://characters/duck/duck_client.tscn"), preload("res://characters/flower/flower_client.tscn"), 
 preload("res://characters/troll/troll_client.tscn"), preload("res://characters/wrestler/wrestler_client.tscn")]
+
 
 func _process(delta: float) -> void:
 	if !is_there_client:
@@ -47,6 +50,7 @@ func _process(delta: float) -> void:
 			state_machine = states.FINISH
 			actual_client.destroy()
 		states.FINISH:
+			main_menu.stop_patience()
 			if actual_client == null:
 				is_there_client = false
 
@@ -64,3 +68,9 @@ func _start_mask_mini_game() -> void:
 	actual_client.start_mask()
 	mask_menu_node.set_mask_needed(color_names[rng.randi_range(0, color_names.size() - 1)])
 	mask_menu_node.visible = true
+	main_menu.start_patience()
+
+
+func _on_main_menu_patience_timeout() -> void:
+	state_machine = states.FINISH
+	actual_client.destroy()

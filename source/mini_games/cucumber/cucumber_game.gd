@@ -6,6 +6,7 @@ var eye_turn : int = 0
 @onready var label : Label = $Label
 
 var finish : bool = false
+@export var missing_target_time_malus : float = 5.0
 
 
 # Called when the node enters the scene tree for the first time.
@@ -30,6 +31,7 @@ func _on_cucumber_stopped(target_missed) -> void:
 	print(target_missed)
 	if target_missed:
 		_spawn_cucumber()
+		$"../../MainMenu".angry_client()
 	elif not target_missed && eyes.size() - 1 != eye_turn:
 		eye_turn += 1
 		_spawn_cucumber()
