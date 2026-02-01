@@ -25,6 +25,7 @@ func _ready() -> void:
 preload("res://characters/duck/duck_client.tscn"), preload("res://characters/flower/flower_client.tscn"), 
 preload("res://characters/troll/troll_client.tscn"), preload("res://characters/wrestler/wrestler_client.tscn")]
 
+
 func _process(delta: float) -> void:
 	if !is_there_client:
 		spawn_client()
@@ -35,7 +36,6 @@ func _process(delta: float) -> void:
 			if !actual_client.is_in_animation():
 				_start_mask_mini_game()
 		states.MASK:
-			main_menu.start_patience()
 			if not actual_client.get_node("Mask/PaintArea").check_win():
 				return
 			
@@ -67,3 +67,9 @@ func _start_mask_mini_game() -> void:
 	actual_client.start_mask()
 	mask_menu_node.set_mask_needed(color_names[rng.randi_range(0, color_names.size() - 1)])
 	mask_menu_node.visible = true
+	main_menu.start_patience()
+
+
+func _on_main_menu_patience_timeout() -> void:
+	state_machine = states.FINISH
+	actual_client.destroy()
