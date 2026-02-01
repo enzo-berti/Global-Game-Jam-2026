@@ -14,6 +14,8 @@ var actual_client : Node
 @export var mask_menu_node : Node
 @export var massage_menu_node : Node
 
+@onready var main_menu : Control = $MainMenu
+
 var color_names : Array[String] = ["blue", "green", "yellow", "red", "violet", "pink"] 
 
 ###### BUILT-IN FUNCTIONS ######
@@ -33,6 +35,7 @@ func _process(delta: float) -> void:
 			if !actual_client.is_in_animation():
 				_start_mask_mini_game()
 		states.MASK:
+			main_menu.start_patience()
 			if not actual_client.get_node("Mask/PaintArea").check_win():
 				return
 			
@@ -46,6 +49,7 @@ func _process(delta: float) -> void:
 			state_machine = states.FINISH
 			actual_client.destroy()
 		states.FINISH:
+			main_menu.stop_patience()
 			if actual_client == null:
 				is_there_client = false
 

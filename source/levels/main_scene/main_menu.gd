@@ -21,7 +21,6 @@ signal patience_timeout
 
 func _ready() -> void:
 	patience_meter.visible = false
-	start_patience()
 
 func _process(delta: float) -> void:
 	patience_meter.value = timer.time_left / patience_time * 100
@@ -51,6 +50,10 @@ func start_patience() -> void:
 	patience_meter.visible = true
 	timer.start()
 
+func stop_patience() -> void:
+	patience_meter.visible = false
+	timer.stop()
+
 func angry_client(time_malus : int) -> void:
 	var remaining_time : float = timer.time_left
 	
@@ -75,3 +78,4 @@ func _on_timer_timeout() -> void:
 	patience_meter.visible = false
 	timer.stop()
 	patience_timeout.emit()
+	stop_patience()
