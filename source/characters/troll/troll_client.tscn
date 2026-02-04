@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cctal0vvttmxc"]
 
 [ext_resource type="PackedScene" uid="uid://bqhqafb6hohi8" path="res://characters/client/client.tscn" id="1_c2dqf"]
-[ext_resource type="Texture2D" uid="uid://bmtrbkxj5b46m" path="res://characters/troll/masque troll.png" id="2_dbb20"]
-[ext_resource type="Texture2D" uid="uid://u8ohonfdn67n" path="res://characters/troll/troll-colere.png" id="2_nxibn"]
+[ext_resource type="Texture2D" uid="uid://bmtrbkxj5b46m" path="res://characters/troll/assets/images/mask_troll.png" id="2_dbb20"]
+[ext_resource type="Texture2D" uid="uid://u8ohonfdn67n" path="res://characters/troll/assets/images/sprite_troll_angry.png" id="2_nxibn"]
 [ext_resource type="PackedScene" uid="uid://dmbth1got02m5" path="res://mini_games/cucumber/eye.tscn" id="3_2e254"]
-[ext_resource type="Texture2D" uid="uid://ycjstcew0q65" path="res://characters/troll/troll-content.png" id="3_dbb20"]
-[ext_resource type="Texture2D" uid="uid://c8h2sglns4t6b" path="res://characters/troll/troll.png" id="4_gtf3o"]
+[ext_resource type="Texture2D" uid="uid://ycjstcew0q65" path="res://characters/troll/assets/images/sprite_troll_content.png" id="3_dbb20"]
+[ext_resource type="Texture2D" uid="uid://c8h2sglns4t6b" path="res://characters/troll/assets/images/sprite_troll.png" id="4_gtf3o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lo8sx"]
 animations = [{
