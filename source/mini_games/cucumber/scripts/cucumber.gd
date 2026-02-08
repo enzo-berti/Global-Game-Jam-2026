@@ -65,12 +65,12 @@ func _slide(delta: float) -> void:
 		x = 0
 		direction_reversed = false
 	
-	path_follow.progress_ratio = ease.InOutSine(x)
+	path_follow.progress_ratio = Ease.InOutSine(x)
 	sprite.position = cucumber_pos
 
 func _score() -> void:
 	var score : int = int(score_max * (1 - clamp(cucumber_pos.distance_to(eye_pos) - score_distance_dead_zone, 0.0, score_distance_limit) / score_distance_limit))
-	game_manager.score += score
+	GameManager.score += score
 	sfx_cucumber.play()
 	
 	if score == 0:

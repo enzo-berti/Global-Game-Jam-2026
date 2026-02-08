@@ -9,8 +9,8 @@ extends Control
 @onready var sfx_button: AudioStreamPlayer2D = $sfx_button
 
 func _ready() -> void:
-	game_manager.score = 0
-	game_manager.health = 3
+	GameManager.score = 0
+	GameManager.health = 3
 
 func _process(_delta: float) -> void:
 	btn_hovered(StartButton)

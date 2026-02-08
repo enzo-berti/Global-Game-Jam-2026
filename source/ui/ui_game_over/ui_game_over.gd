@@ -12,8 +12,8 @@ extends Control
 @export var tween_duration: float
 
 func _ready() -> void:
-	game_manager.score = 0
-	game_manager.health = 3
+	GameManager.score = 0
+	GameManager.health = 3
 
 func _process(_delta: float) -> void:
 	btn_hovered(button_mainmenu)

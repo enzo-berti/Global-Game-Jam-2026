@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dc8y2nu0hs5i8" path="res://mini_games/mask/assets/images/blue_close.PNG" id="8_7l44s"]
 [ext_resource type="Texture2D" uid="uid://du7k10njvih25" path="res://mini_games/mask/assets/images/red_close.PNG" id="11_0jt6n"]
 
-[node name="MaskMenu" type="Control" unique_id=387545059]
+[node name="MaskMenu" type="Control" unique_id=387545059 node_paths=PackedStringArray("mask_needed_node")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -23,12 +23,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h5p0s")
-mask_blue_texture = ExtResource("2_htmkr")
-mask_green_texture = ExtResource("3_eneim")
-mask_yellow_texture = ExtResource("4_387l0")
-mask_red_texture = ExtResource("3_nhca8")
-mask_violet_texture = ExtResource("6_7l44s")
-mask_pink_texture = ExtResource("7_0jt6n")
+mask_needed_node = NodePath("TextBubble/MaskNeeded")
 
 [node name="MaskContainer" type="GridContainer" parent="." unique_id=916576450]
 layout_mode = 1
