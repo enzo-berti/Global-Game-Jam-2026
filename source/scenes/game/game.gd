@@ -38,8 +38,6 @@ preload("res://characters/racoon/racoon_client.tscn")]
 
 
 func _process(delta: float) -> void:
-	
-	
 	if !is_there_client:
 		spawn_client()
 		state_machine = states.START
@@ -49,22 +47,23 @@ func _process(delta: float) -> void:
 			if !actual_client.is_in_animation():
 				_start_mask_mini_game()
 		states.MASK:
-			if not actual_client.get_node("Mask/PaintArea").check_win():
+			if !actual_client.get_node("Mask/PaintArea").check_win():
 				return
 			
-			game_manager.score += 30
+			actual_client.get_node("Mask/PaintArea").can_paint = false
+			GameManager.score += 30
 			mask_menu_node.visible = false
 			state_machine = states.CUCUMBER
 			actual_client.start_cucumber()
 		states.CUCUMBER:
-			if not actual_client.get_node("CucumberGame").is_finished():
+			if !actual_client.get_node("CucumberGame").is_finished():
 				return
 			
 			state_machine = states.FINISH
-			game_manager.win_clients += 1
-			game_manager.win_strike += 1
+			GameManager.win_clients += 1
+			GameManager.win_strike += 1
 			actual_client.destroy()
-			match game_manager.win_strike:
+			match GameManager.win_strike:
 				0:
 					music_player.stream = null
 					music_player.stream = music_1
@@ -98,7 +97,7 @@ func spawn_client() -> void:
 func _start_mask_mini_game() -> void:
 	state_machine = states.MASK
 	actual_client.start_mask()
-	mask_menu_node.set_mask_needed(color_names[rng.randi_range(0, color_names.size() - 1)])
+	mask_menu_node.set_mask_needed(MaskColorAssets.mask_color.values().pick_random())
 	mask_menu_node.visible = true
 	main_menu.start_patience()
 

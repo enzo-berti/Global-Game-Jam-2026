@@ -17,8 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-ease="*uid://d3qs0dviijb4i"
-game_manager="*uid://klorsicilxlm"
+Ease="*uid://d3qs0dviijb4i"
+GameManager="*uid://klorsicilxlm"
+MaskColorAssets="*uid://j8ne6obyw12m"
 
 [display]
 
