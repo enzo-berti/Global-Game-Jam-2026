@@ -1,19 +1,19 @@
 extends Node
 
-var mask_blue_texture : Texture2D = load("res://mini_games/mask/assets/images/blue_open.PNG")
-var mask_green_texture : Texture2D = load("res://mini_games/mask/assets/images/green_open.PNG")
-var mask_pink_texture : Texture2D = load("res://mini_games/mask/assets/images/pink_open.PNG")
-var mask_red_texture : Texture2D = load("res://mini_games/mask/assets/images/red_open.PNG")
-var mask_violet_texture : Texture2D = load("res://mini_games/mask/assets/images/violet_open.PNG")
-var mask_yellow_texture : Texture2D = load("res://mini_games/mask/assets/images/yellow_open.png")
+const BLUE_TEXTURE = preload("uid://dqrya6m7x5xff")
+const GREEN_TEXTURE = preload("uid://fisafk27k3h1")
+const PINK_TEXTURE = preload("uid://bamf4eulufm36")
+const RED_TEXTURE = preload("uid://5a7xnraiaex8")
+const VIOLET_TEXTURE = preload("uid://bj1ysgddyuf53")
+const YELLOW_TEXTURE = preload("uid://crn5iym1av4ja")
 
-var blue : Color = Color.LIGHT_SKY_BLUE
-var green : Color = Color.DARK_OLIVE_GREEN
-var yellow : Color = Color("#FFD700")
-var red : Color = Color.INDIAN_RED
-var violet : Color = Color.DARK_VIOLET
-var pink : Color = Color.PINK
-var none : Color = Color.TRANSPARENT
+const BLUE_COLOR : Color = Color.LIGHT_SKY_BLUE
+const GREEN_COLOR : Color = Color.DARK_OLIVE_GREEN
+const YELLOW_COLOR : Color = Color("#FFD700")
+const RED_COLOR : Color = Color.INDIAN_RED
+const VIOLET_COLOR : Color = Color.DARK_VIOLET
+const PINK_COLOR : Color = Color.PINK
+const NONE_COLOR : Color = Color.TRANSPARENT
 
 enum mask_color
 {
@@ -28,33 +28,33 @@ enum mask_color
 func get_mask_color(color : mask_color) -> Color:
 	match color:
 		mask_color.BLUE:
-			return blue
+			return BLUE_COLOR
 		mask_color.GREEN:
-			return green
+			return GREEN_COLOR
 		mask_color.YELLOW:
-			return yellow
+			return YELLOW_COLOR
 		mask_color.RED:
-			return red
+			return RED_COLOR
 		mask_color.VIOLET:
-			return violet
+			return VIOLET_COLOR
 		mask_color.PINK:
-			return pink
+			return PINK_COLOR
 		_:
-			return none
+			return NONE_COLOR
 
 func get_mask_texture(color : mask_color) -> Texture2D:
 	match color:
 		mask_color.BLUE:
-			return mask_blue_texture
+			return BLUE_TEXTURE
 		mask_color.GREEN:
-			return mask_green_texture
+			return GREEN_TEXTURE
 		mask_color.YELLOW:
-			return mask_yellow_texture
+			return YELLOW_TEXTURE
 		mask_color.RED:
-			return mask_red_texture
+			return RED_TEXTURE
 		mask_color.VIOLET:
-			return mask_violet_texture
+			return VIOLET_TEXTURE
 		mask_color.PINK:
-			return mask_pink_texture
+			return PINK_TEXTURE
 		_:
 			return null
