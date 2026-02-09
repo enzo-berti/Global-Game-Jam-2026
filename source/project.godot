@@ -8,11 +8,17 @@
 
 config_version=5
 
+[accessibility]
+
+general/updates_per_second=90
+
 [application]
 
 config/name="SuperSpeed-SPA"
 run/main_scene="uid://drcepl1658dpn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0.9843137, 0.89411765, 0.8352941, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -46,3 +52,5 @@ MOUSE_BUTTON_LEFT={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.9843137, 0.89411765, 0.8352941, 1)
