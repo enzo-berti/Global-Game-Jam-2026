@@ -43,4 +43,4 @@ Thanks to our training courses delivered by trainers of trainers of trainers of 
 - Graphics : [Nella](https://www.instagram.com/nella.illustrations)
 - Management : [Bertrand Chéronnet](https://linktr.ee/f_d_b)
 - Sound Design - SFX : [Kevin Cros](https://www.instagram.com/vinek)
-- Sound Design - SFX : [Maxime Breistroff](https://www.linkedin.com/in/maxime-breistroff)
+- Sound Design - SFX : [Maxime Breistroff](https://www.linkedin.com/in/maxime-breistroff-23726116a/)
