@@ -32,7 +32,7 @@ Thanks to our training courses delivered by trainers of trainers of trainers of 
 
 | Engine | Drawing | Music |
 |-|-|-|
-| Godot `4.6 Stable` | tbd | tbd |
+| Godot `4.6 Stable` | unknow | Cubase artist 14, FL Studio |
 
 <h2>Authors</h2>
 
