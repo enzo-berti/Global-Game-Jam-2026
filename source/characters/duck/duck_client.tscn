@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dqn3khjuqij28"]
 
 [ext_resource type="PackedScene" uid="uid://bqhqafb6hohi8" path="res://characters/client/client.tscn" id="1_sg4vv"]
-[ext_resource type="Texture2D" uid="uid://d8afrsquc5ch" path="res://characters/duck/duck_mask.png" id="2_7or7q"]
-[ext_resource type="Texture2D" uid="uid://b1h3603ci0u4s" path="res://characters/duck/canard-colere.png" id="2_nxwl7"]
+[ext_resource type="Texture2D" uid="uid://d8afrsquc5ch" path="res://characters/duck/assets/images/mask_duck.png" id="2_7or7q"]
+[ext_resource type="Texture2D" uid="uid://b1h3603ci0u4s" path="res://characters/duck/assets/images/sprite_duck_angry.png" id="2_nxwl7"]
 [ext_resource type="PackedScene" uid="uid://dmbth1got02m5" path="res://mini_games/cucumber/eye.tscn" id="3_nxwl7"]
-[ext_resource type="Texture2D" uid="uid://cb2okh042xl05" path="res://characters/duck/canard-content.png" id="3_ymxcs"]
-[ext_resource type="Texture2D" uid="uid://do3ejmgdokl1i" path="res://characters/duck/canard.png" id="4_ymxcs"]
+[ext_resource type="Texture2D" uid="uid://cb2okh042xl05" path="res://characters/duck/assets/images/sprite_duck_happy.png" id="3_ymxcs"]
+[ext_resource type="Texture2D" uid="uid://do3ejmgdokl1i" path="res://characters/duck/assets/images/sprite_duck.png" id="4_ymxcs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sg4vv"]
 animations = [{

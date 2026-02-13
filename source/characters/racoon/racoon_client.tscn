@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dru53ao5tir82"]
 
 [ext_resource type="PackedScene" uid="uid://bqhqafb6hohi8" path="res://characters/client/client.tscn" id="1_etat5"]
-[ext_resource type="Texture2D" uid="uid://cwrrnqws24ilb" path="res://characters/racoon/raton.png" id="2_ha2ib"]
-[ext_resource type="Texture2D" uid="uid://c5oeqeu60gj7d" path="res://characters/racoon/masque raton.png" id="2_khrbo"]
-[ext_resource type="Texture2D" uid="uid://b6pkfqud0270o" path="res://characters/racoon/raton-colere.png" id="2_oer1g"]
+[ext_resource type="Texture2D" uid="uid://cwrrnqws24ilb" path="res://characters/racoon/assets/images/sprite_racoon.png" id="2_ha2ib"]
+[ext_resource type="Texture2D" uid="uid://c5oeqeu60gj7d" path="res://characters/racoon/assets/images/mask_racoon.png" id="2_khrbo"]
+[ext_resource type="Texture2D" uid="uid://b6pkfqud0270o" path="res://characters/racoon/assets/images/sprite_racoon_angry.png" id="2_oer1g"]
 [ext_resource type="PackedScene" uid="uid://dmbth1got02m5" path="res://mini_games/cucumber/eye.tscn" id="3_cqudq"]
-[ext_resource type="Texture2D" uid="uid://bu27s53auvtc0" path="res://characters/racoon/raton-content.png" id="3_khrbo"]
+[ext_resource type="Texture2D" uid="uid://bu27s53auvtc0" path="res://characters/racoon/assets/images/sprite_racoon_happy.png" id="3_khrbo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ha2ib"]
 animations = [{

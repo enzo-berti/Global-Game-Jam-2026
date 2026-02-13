@@ -34,10 +34,10 @@ func _physics_process(delta: float) -> void:
 	x += clamp(delta / (10 / speed), 0, 1)
 	
 	if destination == game_pos:
-		position = spawn_pos + ease.OutBounce(x) * (destination - spawn_pos)
+		position = spawn_pos + Ease.OutBounce(x) * (destination - spawn_pos)
 		in_animation = true
 	elif destination == destroy_pos:
-		position = game_pos + ease.InSine(x) * (destination - game_pos)
+		position = game_pos + Ease.InSine(x) * (destination - game_pos)
 		in_animation = true
 	else:
 		in_animation = false
@@ -72,7 +72,7 @@ func idle() -> void:
 func angry() -> void:
 	$AnimatedSprite2D.play("angry")
 	if not is_angry:
-		$"../MainMenu".angry_client(2.0)
+		$"../UIGame".angry_client(2.0)
 	timer.start()
 	is_angry = true
 
